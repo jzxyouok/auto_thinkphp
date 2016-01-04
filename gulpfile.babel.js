@@ -60,7 +60,7 @@ gulp.task('clearCache', (done) => {
 // 拷贝相关资源
 gulp.task('copy', () => {
   return gulp.src([
-    'app/*',
+    'app/**/*',
     '!app/*.html',
     '!app/js',
     '!app/style',
@@ -151,9 +151,9 @@ gulp.task('default', ['build', 'watch'], () => {
   const bs = browserSync.create();
 
   bs.init({
-    notify: false,
+    notify: true,
     logPrefix: 'AMT',
-    proxy: 'localhost:3000',
+    proxy: 'auto_thinkphp.com',
   });
 
   gulp.watch(['dist/**/*'], bs.reload);
