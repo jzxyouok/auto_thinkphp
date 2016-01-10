@@ -1,4 +1,6 @@
 var gulp    =   require('gulp');
+var gulpLoadPlugins = require('gulp-load-plugins');
+var $ = gulpLoadPlugins();
 // var plumber  =    require('gulp-plumber');
 // var browsersync =  require('browser-sync');
 // var sass      =  require('gulp-ruby-sass');
@@ -18,5 +20,7 @@ gulp.task('normalCss',function(){
 });
 
 gulp.task('sass',function(){
-
+    gulp.src('app/**/*.scss')
+    .pipe($.sass()).on('error',$.sass.logError)
+    .pipe(gulp.dest('build'))
 });
