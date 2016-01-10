@@ -1,4 +1,2 @@
-thinkphp + gulp
-thinkphp + gulp
-
-必须有html结构才能刷新
+修改思路
+参考：http://www.w3cplus.com/workflow/gulp-tutorial-1-intro-setup.html
