@@ -6,7 +6,7 @@ var browserSync = require('browser-sync');
 //     console.log('Hellp Gulp.js!');
 // });
 
-gulp.task('default',function(){
+gulp.task('default',['watch'],function(){
      const bs = browserSync.create();
      bs.init({
          notify:true,

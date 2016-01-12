@@ -6,5 +6,7 @@ var gulp = require('gulp');
 
  gulp.task('watch',function(){
          //监控scss
-        gulp.watch('app/**/*.scss',['sass'])
+        gulp.watch('app/**/*.scss',['sass']);
+        gulp.watch('app/**/*.html',['html']);
+        gulp.watch('app/**/*.php',['php']);
  });
