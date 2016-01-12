@@ -9,4 +9,9 @@ class IndexController extends Controller
     {
         $this->display();
     }
+
+    public function show()
+    {
+        echo 'abc';
+    }
 }
