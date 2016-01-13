@@ -15,4 +15,6 @@ return array(
 		 'DB_PREFIX'  => 'tt_',
 	//密钥
 		 'SECRET_KEY' => 'lecibupi',
+	//表单令牌配置
+		 'TOKEN_ON'    =>    true,//开启
 );
