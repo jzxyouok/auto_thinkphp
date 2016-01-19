@@ -1,8 +1,7 @@
 <?php
 namespace Admin\Controller;
-use       Common\Controller\AdminController;
-class IndexController extends AdminController
-
+use       Admin\Controller;
+class IndexController extends BaseController
 {
     public function index()
     {

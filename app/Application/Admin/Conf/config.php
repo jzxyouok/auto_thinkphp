@@ -23,4 +23,24 @@ return array(
 				'url' => U('admin/index/index'),
 			),
 		),
+        'SUBMENU'=>array(
+            array(
+                 'title'=>'hello',
+                 'list'=>array(
+                      array('name'=>'hello1','url'=>'index'),
+                      array('name'=>'hello2','url'=>'index'),
+                      array('name'=>'hello3','url'=>'index'),
+                      array('name'=>'hello4','url'=>'index'),
+                 ),
+            ),
+            array(
+                 'title'=>'world',
+                 'list'=>array(
+                      array('name'=>'world1','url'=>'admin/index/index'),
+                      array('name'=>'world2','url'=>'admin/index/index'),
+                      array('name'=>'world3','url'=>'admin/index/index'),
+                      array('name'=>'world4','url'=>'admin/index/index'),
+                 ),
+            ),
+        ),
 );

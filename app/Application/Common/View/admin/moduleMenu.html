@@ -5,5 +5,22 @@
         <li><a href="">首页</a></li>
         <li><a href="">首页</a></li>
     </ul>
-    <div class=""></div>
+<div class="am-panel-group right" id="accordion">
+ <volist name=":C('SUBMENU')" id="item">
+  <div class="am-panel am-panel-default">
+    <div class="am-panel-hd">
+        <h4 class="am-panel-title" data-am-collapse="{parent: '#accordion', target: '#do-not-say-{$key}'}">
+          {$item.title}
+      </h4>
+    </div>
+    <div id="do-not-say-{$key}" class="am-panel-collapse am-collapse">
+      <div class="am-panel-bd">
+          <volist name="item.list" id="it">
+              <li><a href="{:U($it['url'])}">{$it.name}</a></li>
+          </volist>
+      </div>
+    </div>
+  </div>
+ </volist>
+</div>
 </div>
