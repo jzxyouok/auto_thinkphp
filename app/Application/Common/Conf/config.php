@@ -9,9 +9,9 @@ return array(
 		 'DB_TYPE'  => 'mysql',
 		 'DB_USER'  => 'peter',
 		 'DB_PWD'   => '123456',
-		 'DB_HOST'  => 'localhost',
+		 'DB_HOST'  => '120.27.102.51',
 		 'DB_PORT'  => '3306',
-		 'DB_NAME'  => 'thinkphp',
+		 'DB_NAME'  => 'auto_thinkphp',
 		 'DB_PREFIX'  => 'tt_',
 	//密钥
 		 'SECRET_KEY' => 'lecibupi',

@@ -1,3 +1,5 @@
 node_modules
 app/Runtime
+app/Application/Common/Conf/config.php
 build
+**/*/.DS_Store
